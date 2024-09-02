@@ -1,0 +1,16 @@
+/* Aplica el fondo a toda la diapositiva */
+.reveal .slides section {
+  background-color: #CABFFF !important;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Opcional: Estilos para asegurar que el contenido esté centrado */
+.reveal .slides section .columns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
