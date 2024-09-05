@@ -1,0 +1,29 @@
+
+#0. cargar librerias ----
+
+library(dplyr, # para sintaxis
+        car)   # para recodificar
+
+#1. creamos los datos ----------------------------------------------------------
+
+genero <- c(1,1,2,1)
+ingreso <- c(100000, 250000, 50000, 200000)
+acuerdo <- c(1, 3, 5, 1)
+
+datos_ficticios <- data.frame(ingreso, genero, acuerdo)
+
+#2. procesamiento de los datos
+
+## 1.1. seleccionar variables ----
+
+datos <- select(datos_ficticios, ingreso, genero)
+
+## 1.2. filtrar datos----
+
+datos <- filter(datos, genero == 1)
+
+## 1.3. recodificar ----
+
+datos_ficticios$acuerdo <- car::recode(datos_ficticios$acuerdo,
+                                       "1=1;2=1;3=2;5=3")
+

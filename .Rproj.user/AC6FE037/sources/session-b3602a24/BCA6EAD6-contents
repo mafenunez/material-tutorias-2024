@@ -1,0 +1,162 @@
+#TUTORÍA PERSONALIZADA USO DE R STUDIO------------------------------------------
+#María Fernanda Nuñez, equipo de tutoras Sociologia
+
+# ---- I. Los objetos ---------------------------------------------------------- 
+
+# Lo basico en R es crear objetos, para ello debemos hacer lo siguiente:
+
+x <- 1 #en este proceso le asignamos un valor (1) al objeto "x", donde la flecha 
+        #recibe el nombre de "asignador". 
+
+x # ejecutar
+
+ # Sin embargo, debemos diferenciar 4 tipos de datos (variables o vectores) que pueden asignarse a este objeto. 
+
+# Tipos de datos segun su naturaleza:
+
+## ---- 1. character -----
+
+j <- "totalmente de acuerdo"
+j
+
+class(j)
+
+# valores alfanuméricos, es decir, letras, números y signos mezclados. 
+e
+## ---- 2. numeric -----
+
+a <- 1
+a
+
+class(a)
+
+# valores numéricos, incluye decimales.
+
+## ---- 3. integer -----
+
+# números enteros, no incluye decimales. 
+
+  
+## ---- 4. logical -----
+
+i <- FALSE 
+i
+
+class(i)
+
+# valores lógicos, TRUE o FALSE. 
+
+
+# Esto puede visualizarse con la funcion: class()
+
+
+
+# ---- II. Logica general de un codigo -----------------------------------------
+
+# Normalmente, un codigo se compone de un obejto al que le asignamos datos (punto I)
+# A ello, se le agrega la base de datos y las variables 
+
+## BASE FICTICIA -----------------------------------------------------------------
+
+## creamos las variables: (deben tener la misma cantidad de casos)
+
+genero <- c(1,1,2,1,2,2,2,1,2)
+
+ingreso <- c(100000,300000,500000,340000,300000,500000,650000,410000,750000)
+
+acuerdo <- c(1,1,3,2,4,1,5,3,2)
+
+datos_ficticios <- data.frame(genero, ingreso, acuerdo)
+
+## EJEMPLO CON UNA BASE REAL -----------------------------------------------------
+
+## primero cargamos una base de datos (y la libreria)
+install.packages("dplyr")
+
+library(dplyr) #esta es la libreria que inclye las funciones que utlizaremos
+                #select y rename
+library(summarytools) #para funcion descr
+
+
+datos <- read.csv("C:/Users/LENOVO/Documents/Tutoría R/input/base_88.csv")
+
+
+# ejecutamos un codigo
+
+# hay dos formas crear un obejto 
+
+datos <- 
+  
+  #o 
+  
+datos = datos #por lo general en cuanti y en estadistica usaran mas esta
+
+## seleccionamos: 
+
+datos <- select(datos, democracia_19)
+  
+class(datos$democracia_19) #es integer
+
+descr(datos$democracia_19)
+
+## renombramos: 
+
+## esta variable responde al siguiente fraseo: "En las democracias se aspira a 
+## que haya libertades públicas y privadas y que haya orden público y seguridad ciudadana, 
+## pero típicamente las personas le dan más importancia a un valor que al otro. 
+## En su caso, ¿a cuál valor le da más importancia"
+
+## con categorias del 1 (Que haya libertades públicas y privadas) 
+## a 10 (Que haya orden público y seguridad ciudadana)
+## tiene los valores 88 (No sabe (no leer)) 7y 99 (No contesta (no leer)) como NA 
+
+
+class(datos$valor_democracia)
+
+datos = datos %>% #asignamos esots procedimeintos al obejto "datos" 
+  
+  rename(valor_democracia = democracia_19) %>% #se renombra la variable
+  
+  mutate_all(~(as.numeric(.))) %>% #al ser del tipo integer se recodifca a vaieable numerica
+  
+  mutate_all(~(car::recode(., recodes = c("c(88,99) = NA")))) %>% #se realiza la recodificacion de sus NA 
+  
+  na.omit()
+
+datos <- mutate(datos, 
+                  valor_democracia=car::recode(datos$valor_democracia,"88:99=NA"))
+table(datos$valor_democracia)
+
+datos <- mutate (datos, valor_democracia= car::recode(datos, recodes  = c("c(88,99) = NA"))) 
+
+## vemos su naturaleza:
+
+class(datos$valor_democracia) #es numeric
+
+## realizamos un calculo descriptivo:
+
+descr(datos$valor_democracia)
+table(datos$valor_democracia)
+
+## guardamos la base "limpia":
+write.csv(datos, "output/datos_limpios.csv") #para que esto se guarde, es importante crear un proyecto
+
+
+# ---- III. Pasos de una sintaxis ----------------------------------------------
+
+# La sintaxis es secuencial. Por ende, los pasos tienen un orden que debemos seguir.  
+# ademas, debemos tener presente la logica IPO del proyecto
+
+# este orden reponde (generalmente) al siguiente:
+
+# primera sintaxis (procesamiento)
+
+# 0. cargar librerias
+# 1. cargar bbdd 
+# 2. preparar la bbdd -> (select, rename, recode, na.omit, etc.) En esta parte el orden es crucial
+# 3. guardar la base limpia o datos procesados (output)
+
+# segunda sintaxis (cálculo)
+# 0. cargar librerias
+# 1. cargarmos base limpia o procesada
+# 2. calcular estadisticos -> (descriptivos, resuemen, graficos, tablas, etc.)

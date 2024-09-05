@@ -1,0 +1,106 @@
+---
+tpagetitle: "Tutoría prueba t"
+author: "Euipo tutoras sociología"
+
+knitr:
+  opts_chunk: 
+    collapse: true
+    comment: "#>" 
+    R.options:
+      knitr.graphics.auto_pdf: true
+      
+format: 
+  revealjs:
+    logo: images/Imagen2.png
+    slide-number: true
+    theme: [pp.scss]
+    title-slide-attributes:
+      visibility: false
+#      data-background-image: images/portada.jpg
+#      data-background-size: cover
+    auto-play-media: true
+
+
+editor:
+  render-on-save: true
+---
+
+## {data-background-color="#CABFFF"}
+
+:::: {.columns .v-center-container}
+::: {.column width=30%}
+![](images/Imagen4.png){width="80%" fig-align="right"} <br>
+![](images/Imagen1.png){width="80%" fig-align="left"}
+
+:::
+::: {.column width=70%}
+## [***Acompañamiento estadística correlacional: conceptos centrales para la inferencia estadística***]{.black}
+<br> 
+<br>
+Tutora del equipo de sociología María Fernanda Núñez
+:::
+::::
+
+# [En estadística el aprendizaje es [**secuencial**]{.purple} y [**acumulativo**]{.purple}]{.black} {data-background-color="#CABFFF"}
+
+# [***Distribución normal***]{.black} {data-background-color="#CABFFF"}
+
+
+## [***Distribución normal***: ¿Qué es?]{.purple} {data-background-color="#CABFFF"}
+
+
+- Se trata de una **distribución teórica**, que responde a una forma específica en que se distribuyen los datos de nuestra muestra. 
+- A dicha forma particular denomiaremos: **normal**. 
+
+
+## [***Distribución normal***: <br/> ¿cómo se observa?]{.purple}
+
+:::: {.columns}
+::: {.column width=70%}
+
+![](images/dn.png)
+:::
+::: {.column width=30%}
+::: {.content-box-purple}
+- Su centro es el [**promedio**]{.red} 
+- alfa/2 = [**1.96**]{.blue} 
+- Tenemos **unidades de desviación estandar** que se distancia del promedio (es decir, del centro de la distribución)
+:::
+:::
+::::
+
+# [¿Qué más nos entrega la ***distribución normal***?]{.white}{data-background-color="red"} 
+
+## **Valor Z**
+
+## **Valor crítico**
+
+# [Técnicas para le inferencia estadística: [***IC***]{.purple} y [***prueba t***]{.purple}]{.black}{data-background-color="#CABFFF"} 
+
+## [De lo anterior... ¿Qué necesitamos para ***IC***?]{.black}{data-background-color="#CABFFF"}
+
+## [De lo anterior... ¿Qué necesitamos para ***prueba t***?]{.black}{data-background-color="#CABFFF"}
+
+
+# [Entonces... ¿Por qué todo esto es un aprendizaje [**secuencial**]{.purple} y [**acumulativo**]{.purple}?]{.black} 
+
+---
+::: {.content-box-purple}
+- **Hipótesis** (su redacción y testeo es lo esencial para esta unidad del curso)
+:::
+:::{.content-box-purple}
+- **Prueba t** (para el testeo de hipótesis)
+:::
+:::{.content-box-purple}
+- **IC** (para el cálculo del intervalo con el que podemos asegurar...)
+:::
+:::{.content-box-purple}
+- **Valor crítico** (presente como un componente en la prueba t y en el IC)
+:::
+:::{.content-box-purple}
+- **Valor Z** (presente como un componente en la prueba t y en el IC)
+:::
+
+:::{content-box-purple}
+- **Distribución normal** (distribución estandarizada que contiene los componentes necesarios para el cálculo de IC y prueba t)
+:::

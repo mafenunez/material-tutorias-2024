@@ -1,0 +1,57 @@
+pacman::p_load(tidyverse, # Manipulacion datos
+               sjPlot, # Tablas
+               psych, # Correlaciones
+               DescTools, # Tablas
+               ggplot2, # graficos en general
+               broom,
+               rempsyc,
+               FactoMineR, # analisis de correspondencia 
+               factoextra # analisis de correspondencia
+)
+
+options(scipen = 999) # para desactivar notacion cientifica
+rm(list = ls()) # para limpiar el entorno de trabajo
+load(url("https://dataverse.harvard.edu/api/access/datafile/7245118")) 
+
+dim(elsoc_long_2016_2022.2)
+proc_data <- elsoc_long_2016_2022.2 %>% filter(ola=="4") %>% 
+  select(constitucion=c29, # Confianza generalizada
+         educacion=m01,# nivel educacional
+         coalicion=c17, # coalicion politica
+         aut_demo=c25 # autoritarismo o democracia
+  ) 
+
+proc_data <- proc_data %>% sjlabelled::set_na(., na = c(-999, -888, -777, -666))
+# Comprobar
+names(proc_data)
+proc_data$educacion <- car::recode(proc_data$educacion, "c(1,2,3)=1; c(4,5)=2; c(6,7,8,9,10)=3")
+
+proc_data$educacion <- sjlabelled::set_labels(proc_data$educacion,
+                                              labels=c( "Educación básica"=1,
+                                                        "Educación media"=2,
+                                                        "Educación superior"=3))
+
+proc_data$constitucion <- sjlabelled::set_labels(proc_data$constitucion,
+                                                 labels=c( "Expertos"=1,
+                                                           "Parlamento"=2,
+                                                           "Asamblea"=3))
+
+proc_data$coalicion <- sjlabelled::set_labels(proc_data$coalicion,
+                                              labels=c( "Chile vamos"=1,
+                                                        "Nueva mayoría"=2,
+                                                        "Frente amplio"=3,
+                                                        "Otro"=4,
+                                                        "Ninguno"=5))
+
+proc_data$aut_demo <- sjlabelled::set_labels(proc_data$aut_demo,
+                                             labels=c( "Democracia"=1,
+                                                       "Autoritarismo"=2,
+                                                       "Da lo mismo"=3,
+                                                       "Ninguno"=4))
+
+sjmisc::frq(proc_data$educacion)
+sjmisc::frq(proc_data$constitucion)
+sjmisc::frq(proc_data$coalicion)
+sjmisc::frq(proc_data$aut_demo)
+proc_data <- proc_data %>%
+  mutate(across(everything(), sjlabelled::as_label))

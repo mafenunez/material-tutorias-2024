@@ -1,9 +1,0 @@
-# Editor de sintaxis
-
-entorno <- 1
-
-_de <- 2
-
-trabajo <- 3
-
-entorno_de_trabajo <- data.frame(entorno, de, trabajo)

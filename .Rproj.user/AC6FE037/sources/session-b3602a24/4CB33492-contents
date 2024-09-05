@@ -1,0 +1,29 @@
+
+
+# ---- III. Pasos de una sintaxis ----------------------------------------------
+
+# La sintaxis es secuencial. Por ende, los pasos tienen un orden que debemos seguir.  
+# ademas, debemos tener presente la logica IPO del proyecto
+
+# este orden reponde (generalmente) al siguiente:
+
+
+# primera sintaxis (procesamiento) ----
+
+## 0. cargar librerias ----
+
+## 1. cargar bbdd ----
+
+## 2. preparar la bbdd ----
+  #-> (select, rename, recode, na.omit, etc.) En esta parte el orden es crucial
+
+## 3. guardar la base limpia o datos procesados (output) ----
+
+# segunda sintaxis (cálculo) ----
+
+## 0. cargar librerias ----
+
+## 1. cargarmos base limpia o procesada ----
+
+## 2. calcular estadisticos ----
+  #-> (descriptivos, resuemen, graficos, tablas, etc.)
