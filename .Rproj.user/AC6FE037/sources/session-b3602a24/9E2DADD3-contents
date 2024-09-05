@@ -37,7 +37,7 @@ editor:
 ## [***Acompañamiento estadística correlacional: conceptos centrales para la inferencia estadística***]{.black}
 <br> 
 <br>
-Tutora del equipo de sociología María Fernanda Núñez
+María Fernanda Núñez, tutora del equipo de sociología 
 :::
 ::::
 
@@ -48,9 +48,14 @@ Tutora del equipo de sociología María Fernanda Núñez
 
 ## [***Distribución normal***: ¿Qué es?]{.purple} {data-background-color="#CABFFF"}
 
-
+::::{.columns}
+:::{.column width=50%}
 - Se trata de una **distribución teórica**, que responde a una forma específica en que se distribuyen los datos de nuestra muestra. 
+:::
+:::{.column width=50%}
 - A dicha forma particular denomiaremos: **normal**. 
+:::
+::::
 
 
 ## [***Distribución normal***: <br/> ¿cómo se observa?]{.purple}
@@ -62,9 +67,9 @@ Tutora del equipo de sociología María Fernanda Núñez
 :::
 ::: {.column width=30%}
 ::: {.content-box-purple}
-- Su centro es el [**promedio**]{.red} 
-- alfa/2 = [**1.96**]{.blue} 
-- Tenemos **unidades de desviación estandar** que se distancia del promedio (es decir, del centro de la distribución)
+- Su centro es el [**promedio**]{.red} ($\mu$) 
+- [$\frac{\alpha}{2} = 1.96$]{.blue}  
+- Tenemos [**unidades de desviación estandar** ($\sigma$)]{.gray} que se distancian del promedio (es decir, del centro de la distribución)
 :::
 :::
 ::::
@@ -77,30 +82,53 @@ Tutora del equipo de sociología María Fernanda Núñez
 
 # [Técnicas para le inferencia estadística: [***IC***]{.purple} y [***prueba t***]{.purple}]{.black}{data-background-color="#CABFFF"} 
 
+
 ## [De lo anterior... ¿Qué necesitamos para ***IC***?]{.black}{data-background-color="#CABFFF"}
 
+:::{.content-box-purple}
+$$
+IC = \bar{x} \pm Z_{\frac{\alpha}{2}} \cdot SE
+$$
+:::
+
+Donde:
+
+:::{.content-box-purple}
+$$
+SE = \frac{s}{\sqrt{n}}
+$$
+:::
+
+----
+
 ## [De lo anterior... ¿Qué necesitamos para ***prueba t***?]{.black}{data-background-color="#CABFFF"}
+
+:::{.content-box-purple}
+$$
+t = \frac{\bar{x}_1 - \bar{x}_2}{\sqrt{\left( \frac{s_1^2}{n_1} \right) + \left( \frac{s_2^2}{n_2} \right)}}
+$$
+:::
+
 
 
 # [Entonces... ¿Por qué todo esto es un aprendizaje [**secuencial**]{.purple} y [**acumulativo**]{.purple}?]{.black} 
 
 ---
-::: {.content-box-purple}
-- **Hipótesis** (su redacción y testeo es lo esencial para esta unidad del curso)
+::: {.content-box-gray}
+- [**Hipótesis**]{.red} (su redacción y testeo es lo esencial para esta unidad del curso)
 :::
 :::{.content-box-purple}
-- **Prueba t** (para el testeo de hipótesis)
+- [**Prueba t**]{.purple} (para el testeo de hipótesis)
 :::
 :::{.content-box-purple}
-- **IC** (para el cálculo del intervalo con el que podemos asegurar...)
+- [**IC**]{.purple} (para el cálculo del intervalo con el que podemos asegurar...)
+:::
+:::{.content-box-red}
+- [**Valor crítico**]{.purple} (presente como un componente en la prueba t y en el IC)
+:::
+:::{.content-box-red}
+- [**Valor Z**]{.purple} (presente como un componente en la prueba t y en el IC)
 :::
 :::{.content-box-purple}
-- **Valor crítico** (presente como un componente en la prueba t y en el IC)
-:::
-:::{.content-box-purple}
-- **Valor Z** (presente como un componente en la prueba t y en el IC)
-:::
-
-:::{content-box-purple}
-- **Distribución normal** (distribución estandarizada que contiene los componentes necesarios para el cálculo de IC y prueba t)
+- [**Distribución normal**]{.purple} (distribución estandarizada que contiene los componentes necesarios para el cálculo de IC y prueba t)
 :::
