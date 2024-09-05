@@ -358,7 +358,7 @@
 </ul>
 </div><div class="column" style="width:50%;">
 <ul>
-<li>A dicha forma particular denomiaremos: <strong>normal</strong>.</li>
+<li>A dicha forma particular denominaremos: <strong>normal</strong>.</li>
 </ul>
 </div>
 </div>
@@ -371,7 +371,7 @@
 </div><div class="column" style="width:30%;">
 <div class="content-box-purple">
 <ul>
-<li>Su centro es el <span class="red"><strong>promedio</strong></span> (<span class="math inline">\(\mu\)</span>)</li>
+<li>Su centro es el <span class="red"><strong>promedio</strong> (<span class="math inline">\(\mu\)</span>)</span></li>
 <li><span class="blue"><span class="math inline">\(\frac{\alpha}{2} = 1.96\)</span></span><br>
 </li>
 <li>Tenemos <span class="gray"><strong>unidades de desviación estandar</strong> (<span class="math inline">\(\sigma\)</span>)</span> que se distancian del promedio (es decir, del centro de la distribución)</li>
@@ -387,13 +387,24 @@
 </section>
 <section id="valor-z" class="slide level2">
 <h2><strong>Valor Z</strong></h2>
+<ul>
+<li><p>Corresponde a un <strong><em>valor estandarizado</em></strong>.</p></li>
+<li><p>En la <em>distribución normal</em> es interpretado de la siguiente manera:</p></li>
+</ul>
+<div class="content-box-purple">
+<p><strong>El número de <span class="purple">desviaciones estándar (<span class="math inline">\(\sigma\)</span>)</span> en que esta <span class="purple"><span class="math inline">\(X\)</span> (observación original o caso)</span> respecto del <span class="purple">promedio (<span class="math inline">\(\mu\)</span>)</span></strong></p>
+</div>
 </section>
 <section id="valor-crítico" class="slide level2">
 <h2><strong>Valor crítico</strong></h2>
+<ul>
+<li>Corresponde al valor <span class="purple"><span class="math inline">\(t\)</span></span> de <span class="purple"><span class="math inline">\(\pm1.96\)</span></span>, para una probabilidad de <span class="purple"><strong>0.025</strong></span> (considerando dicha probabilidad para <em>cada cola</em>)</li>
+<li>Concretamente refiere a la <strong>sección de la distribución normal (las colas)</strong> en donde se encuentra la <span class="purple"><strong>zona de rechazo de la hipótesis nula</strong></span>. En este caso, considerando que nos encontramos trabajando con un <span class="red"><em>95% de confianza</em></span></li>
+</ul>
 </section></section>
 <section>
-<section id="técnicas-para-le-inferencia-estadística-ic-y-prueba-t" class="title-slide slide level1 center" data-background-color="#CABFFF">
-<h1><span class="black">Técnicas para le inferencia estadística: <span class="purple"><strong><em>IC</em></strong></span> y <span class="purple"><strong><em>prueba t</em></strong></span></span></h1>
+<section id="técnicas-para-le-inferencia-estadística-ic-y-prueba-t-para-diferencia-de-medias" class="title-slide slide level1 center" data-background-color="#CABFFF">
+<h1><span class="black">Técnicas para le inferencia estadística: <span class="purple"><strong><em>IC</em></strong></span> y <span class="purple"><strong><em>prueba t</em></strong></span> para diferencia de medias</span></h1>
 
 </section>
 <section id="de-lo-anterior-qué-necesitamos-para-ic" class="slide level2" data-background-color="#CABFFF">
@@ -417,6 +428,22 @@ SE = \frac{s}{\sqrt{n}}
 t = \frac{\bar{x}_1 - \bar{x}_2}{\sqrt{\left( \frac{s_1^2}{n_1} \right) + \left( \frac{s_2^2}{n_2} \right)}}
 \]</span></p>
 </div>
+<ul>
+<li><span class="purple"><span class="math inline">\(t\)</span></span> corresponde al <span class="purple"><strong>valor empírico</strong></span> (que generalmente llamaremos: t / estadístico t / t empírico / t calculado / t estimado)</li>
+</ul>
+</section>
+<section id="de-lo-anterior-qué-necesitamos-para-prueba-t-1" class="slide level2" data-background-color="#CABFFF">
+<h2><span class="black">De lo anterior… ¿Qué necesitamos para <strong><em>prueba t</em></strong>?</span></h2>
+<div class="content-box-purple">
+<ul>
+<li>Para el <em>testeo de hipótesis</em> con <strong>prueba t para diferencia de medias</strong> debe <span class="purple"><strong>contrastarse este valor empírico con el valor crítico</strong></span> (asociado a una probabilidad de erro de <span class="purple"><span class="math inline">\(\alpha\)</span></span>, es decir <span class="purple"><strong>0.05</strong></span>, con valor <span class="purple"><span class="math inline">\(\pm1.96\)</span></span>)</li>
+</ul>
+</div>
+<div class="content-box-red">
+<ul>
+<li>Tenemos que: (a) en términos de probabilidades <span class="red"><strong>rechazaremos</strong> la hipótesis nula (<span class="math inline">\(H0\)</span>) cuando <span class="math inline">\(p&lt;0.05\)</span></span>, de modo que <span class="math inline">\(Pcalculado\)</span> sea mayor al <span class="math inline">\(Pcrítico\)</span> (<span class="math inline">\(0.05\)</span>). O, (b) en terminos de la región en la distribución <span class="red"><span class="math inline">\(t\)</span> sea mayor al t crítico (o valor crítico) <span class="math inline">\(\pm1.96\)</span></span></li>
+</ul>
+</div>
 </section></section>
 <section>
 <section id="entonces-por-qué-todo-esto-es-un-aprendizaje-secuencial-y-acumulativo" class="title-slide slide level1 center">
@@ -437,7 +464,7 @@ t = \frac{\bar{x}_1 - \bar{x}_2}{\sqrt{\left( \frac{s_1^2}{n_1} \right) + \left(
 </div>
 <div class="content-box-purple">
 <ul>
-<li><span class="purple"><strong>IC</strong></span> (para el cálculo del intervalo con el que podemos asegurar…)</li>
+<li><span class="purple"><strong>IC</strong></span> (para el cálculo del intervalo con el que podemos asegurar con cierto nivel de confianza en que nuestro estadístico se encuentra en el parámetro)</li>
 </ul>
 </div>
 <div class="content-box-red">

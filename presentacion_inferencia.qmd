@@ -53,7 +53,7 @@ María Fernanda Núñez, tutora del equipo de sociología
 - Se trata de una **distribución teórica**, que responde a una forma específica en que se distribuyen los datos de nuestra muestra. 
 :::
 :::{.column width=50%}
-- A dicha forma particular denomiaremos: **normal**. 
+- A dicha forma particular denominaremos: **normal**. 
 :::
 ::::
 
@@ -67,7 +67,7 @@ María Fernanda Núñez, tutora del equipo de sociología
 :::
 ::: {.column width=30%}
 ::: {.content-box-purple}
-- Su centro es el [**promedio**]{.red} ($\mu$) 
+- Su centro es el [**promedio** ($\mu$)]{.red} 
 - [$\frac{\alpha}{2} = 1.96$]{.blue}  
 - Tenemos [**unidades de desviación estandar** ($\sigma$)]{.gray} que se distancian del promedio (es decir, del centro de la distribución)
 :::
@@ -78,9 +78,20 @@ María Fernanda Núñez, tutora del equipo de sociología
 
 ## **Valor Z**
 
-## **Valor crítico**
+- Corresponde a un ***valor estandarizado***. 
 
-# [Técnicas para le inferencia estadística: [***IC***]{.purple} y [***prueba t***]{.purple}]{.black}{data-background-color="#CABFFF"} 
+- En la *distribución normal* es interpretado de la siguiente manera: 
+
+:::{.content-box-purple}
+**El número de [desviaciones estándar ($\sigma$)]{.purple} en que esta [$X$ (observación original o caso)]{.purple} respecto del [promedio ($\mu$)]{.purple}**
+:::
+
+## **Valor crítico**
+- Corresponde al valor [$t$]{.purple} de [$\pm1.96$]{.purple}, para una probabilidad de [**0.025**]{.purple} (considerando dicha probabilidad para *cada cola*)
+- Concretamente refiere a la **sección de la distribución normal (las colas)** en donde se encuentra la [**zona de rechazo de la hipótesis nula**]{.purple}. En este caso, considerando que nos encontramos trabajando con un [*95% de confianza*]{.red}
+
+
+# [Técnicas para le inferencia estadística: [***IC***]{.purple} y [***prueba t***]{.purple} para diferencia de medias]{.black}{data-background-color="#CABFFF"} 
 
 
 ## [De lo anterior... ¿Qué necesitamos para ***IC***?]{.black}{data-background-color="#CABFFF"}
@@ -109,7 +120,15 @@ t = \frac{\bar{x}_1 - \bar{x}_2}{\sqrt{\left( \frac{s_1^2}{n_1} \right) + \left(
 $$
 :::
 
+- [$t$]{.purple} corresponde al [**valor empírico**]{.purple} (que generalmente llamaremos:  t / estadístico t / t empírico / t calculado / t estimado)
 
+## [De lo anterior... ¿Qué necesitamos para ***prueba t***?]{.black}{data-background-color="#CABFFF"}
+::: {.content-box-purple}
+- Para el *testeo de hipótesis* con **prueba t para diferencia de medias** debe [**contrastarse este valor empírico con el valor crítico**]{.purple} (asociado a una probabilidad de erro de [$\alpha$]{.purple}, es decir [**0.05**]{.purple}, con valor [$\pm1.96$]{.purple})
+:::
+:::{.content-box-red}
+- Tenemos que: (a) en términos de probabilidades [**rechazaremos** la hipótesis nula ($H0$) cuando $p<0.05$]{.red}, de modo que $Pcalculado$ sea mayor al $Pcrítico$ ($0.05$). O, (b) en terminos de la región en la distribución [$t$ sea mayor al t crítico (o valor crítico) $\pm1.96$]{.red} 
+:::
 
 # [Entonces... ¿Por qué todo esto es un aprendizaje [**secuencial**]{.purple} y [**acumulativo**]{.purple}?]{.black} 
 
@@ -121,7 +140,7 @@ $$
 - [**Prueba t**]{.purple} (para el testeo de hipótesis)
 :::
 :::{.content-box-purple}
-- [**IC**]{.purple} (para el cálculo del intervalo con el que podemos asegurar...)
+- [**IC**]{.purple} (para el cálculo del intervalo con el que podemos asegurar con cierto nivel de confianza en que nuestro estadístico se encuentra en el parámetro)
 :::
 :::{.content-box-red}
 - [**Valor crítico**]{.purple} (presente como un componente en la prueba t y en el IC)
