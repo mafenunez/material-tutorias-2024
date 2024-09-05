@@ -1,9 +1,9 @@
 {
     "id": "9E2DADD3",
-    "path": "~/GitHub/material-tutorias-2024/presentacion_pruebat.qmd",
-    "project_path": "presentacion_pruebat.qmd",
+    "path": "~/GitHub/material-tutorias-2024/presentacion_inferencia.qmd",
+    "project_path": "presentacion_inferencia.qmd",
     "type": "quarto_markdown",
-    "hash": "0",
+    "hash": "480846028",
     "contents": "",
     "dirty": false,
     "created": 1725509875555.0,
@@ -26,7 +26,7 @@
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1725527603913,
+    "last_content_update": 1725527603,
     "read_only": false,
     "read_only_alternatives": []
 }
