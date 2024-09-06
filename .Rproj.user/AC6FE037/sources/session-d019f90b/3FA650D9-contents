@@ -158,15 +158,9 @@ La lógica de contraste de hipótesis es intentar [**falsar**]{.purple} lo que e
 :::
 ::::
 
-## 
-[... Ahora para contrastar las hipótesis]{.gray} <br />
+# [<span style="background:#FF4A31">Ahora una ***actividad***</span>]{.black} {data-background-color="#CABFFF"} 
 
-- $\mu_1$:
-- $\mu_2$:
-- $s_1$: 
-- $s_2$:
-- $n_1$: 
-- $n_2$:
+## [Enunciado]{.black} 
 
 ## **Recordatorio: paso a paso para testar hipótesis**
 
@@ -192,9 +186,6 @@ t = \frac{\bar{x}_1 - \bar{x}_2}{\sqrt{\left( \frac{s_1^2}{n_1} \right) + \left(
 $$
 :::
 
-# [<span style="background:#FF4A31">Ahora una ***actividad***</span>]{.black} {data-background-color="#CABFFF"} 
-
-## [Enunciado]{.black} 
 
 # [***Lo último pero no menos importante... <br /> ¿Cómo nos enfrentamos a la [prueba en sala]{.purple}?***]{.black} {data-background-color="#CABFFF"}
 
