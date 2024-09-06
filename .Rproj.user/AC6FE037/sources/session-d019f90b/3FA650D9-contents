@@ -160,7 +160,33 @@ La lógica de contraste de hipótesis es intentar [**falsar**]{.purple} lo que e
 
 # [<span style="background:#FF4A31">Ahora una ***actividad***</span>]{.black} {data-background-color="#CABFFF"} 
 
-## [Enunciado]{.black} 
+## {data-background-color="#CABFFF"}
+
+
+[Redactemos las hipótesis del siguiente enunciado]{.black} 
+<br />
+<br />
+<br />
+
+:::{.content-box-purple}
+Un investigador quiere estudiar si hay una diferencia significativa en el promedio de horas de sueño entre estudiantes universitarios que trabajan (ET) y los que no trabajan (ETN).  En promedio, los estudiantes que trabajan duermen 5 horas por noche y los estudiantes que no trabajan duermen 7 horas por noche
+:::
+
+## {data-background-color="#CABFFF"}
+
+
+[Redactemos las hipótesis del siguiente enunciado]{.black} 
+<br />
+<br />
+<br />
+
+:::{.content-box-purple}
+Un investigador quiere estudiar si hay una diferencia significativa en el promedio de horas de sueño entre estudiantes universitarios que trabajan (ET) y los que no trabajan (ETN).  En promedio, los estudiantes que trabajan duermen 5 horas por noche y los estudiantes que no trabajan duermen 7 horas por noche
+:::
+
+<br />
+[Ahora, **¿qué debemos realizar para contrastar $H_0$?**]{.purple}
+
 
 ## **Recordatorio: paso a paso para testar hipótesis**
 
