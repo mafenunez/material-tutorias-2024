@@ -47,22 +47,34 @@ Victoria Arias, Cristóbal Mejías, María Fernanda Núñez, Constanza Pedregal 
 
 ## [*¿Qué es una [**hipótesis**]{.purple}?*]{.black} {data-background-color="#CABFFF"}
 
+- Una hipótesis es una **aseveración** o **predicción** sobre una situación que ocurre en la población en estudio; en sociología las hipotesis nos permiten conectar la teoría con la investigación empírica 
+
+- Hay hipotesis que consideran **una variable** y otros que consideran **dos variables**
+
 ## [**Tipos de hipótesis**]{.purple}
 ::::{.columns}
 :::{.column width=50%}
 :::{.content-box-purple}
-- Direccionales y no direccionales 
+- Direccionales 
+- No direccionales 
 :::
 :::
 :::{.column width=50%}
 :::{.content-box-purple}
-- de una cola y de dos colas
+- De una cola  
+- De dos colas
 :::
 :::
 ::::
 
 ## [Hipótesis **nula** ($H0$) e hipótesis **alternativa** ($H1$)]{.black} {data-background-color="#CABFFF"}
 
+:::{.content-box-purple}
+- $H1$: corresponde a nuestra [**hipótesis de investigación**]{.purple}
+:::
+:::{.content-box-red}
+- $H0$: corresponde a la [**redacción inversa**]{.red} de $H1$
+:::
 
 
 # [***¿Por qué es <br /> importante H0?***]{.white} {data-background-color="red"}
@@ -114,7 +126,29 @@ Victoria Arias, Cristóbal Mejías, María Fernanda Núñez, Constanza Pedregal 
 
 # [***Lo último pero no menos importante... <br /> ¿Cómo nos enfrentamos a la [prueba en sala]{.purple}?***]{.black} {data-background-color="#CABFFF"}
 
-## [Tips]{.black} {data-background-color="#CABFFF"}
+## [*Antes* del día de la prueba]{.black} {data-background-color="#CABFFF"}
 
+:::{.content-box-purple}
+-  [Cuidar la salud mental]{.purple} (dormir, comer e hidratarse bien!!!)
+-  **Estudiar** y **preparar** la evaluación (resúmenes escritos a mano, mapas conceptuales, etc.)
+- Intentar *mejorar la calidad de la letra*
+:::
+
+## [*Durante* la prueba]{.black}{data-background-color="#CABFFF"}
+
+:::{.content-box-purple}
+-  Leer cuidadosamente las instrucciones
+-  **Planificar** el tiempo 
+-  Organizar las ideas antes de escribir (identificar correctamente las *variables*, *grupos* e *hipótesis*)
+:::
+
+## [*Antes de entregar la prueba*]{.black}{data-background-color="#CABFFF"}
+:::{.content-box-purple}
+- Preguntarse: 
+-  *¿Respondí directamente lo que me solicitaban?*
+-  *¿[**Calcule**]{.purple} correctamente los estadísticos?*
+-  *¿[**Interprete**]{.purple} de forma correcta y anote lo necesario para una respuesta reigurosa que denote el aprendizaje de los contenidos de este curso?*
+
+:::
 
 # [**Gracias por su atención!**]{.black} 
