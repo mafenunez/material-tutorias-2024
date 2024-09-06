@@ -47,7 +47,9 @@ Victoria Arias, Cristóbal Mejías, María Fernanda Núñez, Constanza Pedregal 
 
 ## [*¿Qué es una [**hipótesis**]{.purple}?*]{.black} {data-background-color="#CABFFF"}
 
-- Una hipótesis es una **aseveración** o **predicción** sobre una situación que ocurre en la población en estudio; en sociología las hipotesis nos permiten conectar la teoría con la investigación empírica 
+- Una hipótesis es una **aseveración** o **predicción** sobre una situación que ocurre en la población en estudio
+
+- En sociología las hipotesis nos permiten conectar la teoría con la investigación empírica 
 
 - Hay hipotesis que consideran **una variable** y otros que consideran **dos variables**
 
@@ -79,8 +81,15 @@ Victoria Arias, Cristóbal Mejías, María Fernanda Núñez, Constanza Pedregal 
 
 # [***¿Por qué es <br /> importante H0?***]{.white} {data-background-color="red"}
 
-## [***Falsabilidad***]{.purple} {data-background-color="#CABFFF"}
-- Falsar
+## ***Falsabilidad*** {data-background-color="#CABFFF"}
+
+- Es la idea es **refutar una teoría mediante una hipotesis contraria**, pues verificar una hipótesis no hace que una teoría sea verdadera 
+
+::: {#vcenter}
+::: {.content-box-red}
+La lógica de contraste de hipótesis es intentar [**falsar**]{.purple} lo que es contrario a nuestra hipótesis original <br /> <br /> Dicha hipótesis contraria corresponde a nuestra [$H0$]{.red}
+:::
+:::
 
 ## [Ahora bien... [***¿Cómo redactamos una hipótesis?***]{.purple}]{.black} 
 :::{.content-box-purple}
