@@ -57,29 +57,44 @@ Victoria Arias, Cristóbal Mejías, María Fernanda Núñez, Constanza Pedregal 
 ::::{.columns}
 :::{.column width=50%}
 :::{.content-box-purple}
-- Direccionales 
-- No direccionales 
+- **Direccionales** (o de [dos colas]{.red})
+$$
+\begin{aligned}
+    H_0 &: \mu_1 \leq \mu_2 \\
+    H_1 &: \mu_1 > \mu_2
+\end{aligned}
+$$
+
+Ejemplo: <br /> <br /> $H_1$: estudiantes de familias con mayores ingresos ($\mu_1$) tienen [*mejores resultados académicos*]{.red} que los estudiantes de familias con menores ingresos ($\mu_2$)
 :::
 :::
 :::{.column width=50%}
 :::{.content-box-purple}
-- De una cola  
-- De dos colas
+- **No-direccionales** (o de [una cola]{.red})
+$$
+\begin{aligned}
+    H_0 &: \mu_1 = \mu_2 \\
+    H_1 &: \mu_1 \neq \mu_2
+\end{aligned}
+$$
+
+Ejemplo: <br /> <br /> $H_1$: existe una [*diferencia en los resultados académicos*]{.red} entre los estudiantes de familias con diferentes niveles de ingresos
+<br />
 :::
 :::
 ::::
 
-## [Hipótesis **nula** ($H0$) e hipótesis **alternativa** ($H1$)]{.black} {data-background-color="#CABFFF"}
+## [Hipótesis **nula** ($H_0$) e hipótesis **alternativa** ($H_1$)]{.black} {data-background-color="#CABFFF"}
 
 :::{.content-box-purple}
-- $H1$: corresponde a nuestra [**hipótesis de investigación**]{.purple}
+- $H_1$: corresponde a nuestra [**hipótesis de investigación**]{.purple}
 :::
 :::{.content-box-red}
-- $H0$: corresponde a la [**redacción inversa**]{.red} de $H1$
+- $H_0$: corresponde a la [**redacción inversa**]{.red} de $H_1$
 :::
 
 
-# [***¿Por qué es <br /> importante H0?***]{.white} {data-background-color="red"}
+# [***¿Por qué es <br /> importante $H_0$?***]{.white} {data-background-color="red"}
 
 ## ***Falsabilidad*** {data-background-color="#CABFFF"}
 
@@ -87,21 +102,21 @@ Victoria Arias, Cristóbal Mejías, María Fernanda Núñez, Constanza Pedregal 
 
 ::: {#vcenter}
 ::: {.content-box-red}
-La lógica de contraste de hipótesis es intentar [**falsar**]{.purple} lo que es contrario a nuestra hipótesis original <br /> <br /> Dicha hipótesis contraria corresponde a nuestra [$H0$]{.red}
+La lógica de contraste de hipótesis es intentar [**falsar**]{.purple} lo que es contrario a nuestra hipótesis original <br /> <br /> Dicha hipótesis contraria corresponde a nuestra [$H_0$]{.red}
 :::
 :::
 
 ## [Ahora bien... [***¿Cómo redactamos una hipótesis?***]{.purple}]{.black} 
 :::{.content-box-purple}
-- Idetificar **variables** del enunciado: su nivel de medición y cuál es dependiente ($x$) y cuál independiente ($y$). 
+- Idetificar **variables** del enunciado: su nivel de medición y cuál es dependiente ($x$) y cuál independiente ($y$) 
 
 :::
 :::{.content-box-purple}
-- De acuerdo a ello, identificamos los **grupos** a comparar (variable $x$): grupo 1 y grupo 2. 
+- De acuerdo a ello, identificamos los **grupos** a comparar (variable $x$): grupo 1 ($\mu_1$) y grupo 2 ($\mu_2$) 
 
 :::
 :::{.content-box-purple}
-- Formulamos la hipótesis de acuerdo a la relación entre estos grupos:  **igualdad** ($=$) o **desigualdad** ($>$ o $<$) 
+- Formulamos la hipótesis de acuerdo a la relación entre estos grupos:  **igualdad** ($=$) o **desigualdad** ($>$ o $\leq$), es decir, su [**direccionalidad**]{.purple}
 :::
 ## 
 
@@ -117,14 +132,14 @@ La lógica de contraste de hipótesis es intentar [**falsar**]{.purple} lo que e
 
 ::::{.columns}
 :::{.column width=20%}
-**$H_1$**: $\mu_1<\mu_2$
+**$H_1$**: $\mu_1\leq\mu_2$
 <br / >
-**$H_0$**: $\mu_1\geq\mu_2$
+**$H_0$**: $\mu_1>\mu_2$
 :::
 :::{.column width=80%}
-**$H_1$**: Los <span style="background:#CABFFF">trabajos con un bajo nivel de satisfacción laboral</span> tendrían un [**menor nivel de dificultad física**]{.purple} que los <span style="background:#AFDBFF">trabajos con un alto nivel de satisfacción laboral</span>
+**$H_1$**: Los <span style="background:#CABFFF">trabajos con un bajo nivel de satisfacción laboral</span> tendrían un [**menor o igual nivel de dificultad física**]{.purple} que los <span style="background:#AFDBFF">trabajos con un alto nivel de satisfacción laboral</span>
 <br />
-**$H_0$**: Los <span style="background:#CABFFF">trabajos con un bajo nivel de satisfacción laboral</span> tendrían un [**mayor o igual nivel de dificultad física**]{.purple} que los <span style="background:#AFDBFF">trabajos con un alto nivel de satisfacción laboral</span>
+**$H_0$**: Los <span style="background:#CABFFF">trabajos con un bajo nivel de satisfacción laboral</span> tendrían un [**mayor nivel de dificultad física**]{.purple} que los <span style="background:#AFDBFF">trabajos con un alto nivel de satisfacción laboral</span>
 :::
 ::::
 
@@ -140,23 +155,23 @@ La lógica de contraste de hipótesis es intentar [**falsar**]{.purple} lo que e
 :::{.content-box-purple}
 -  [Cuidar la salud mental]{.purple} (dormir, comer e hidratarse bien!!!)
 -  **Estudiar** y **preparar** la evaluación (resúmenes escritos a mano, mapas conceptuales, etc.)
-- Intentar *mejorar la calidad de la letra*
+- Intentar [*mejorar la calidad de la letra*]{.red}
 :::
 
 ## [*Durante* la prueba]{.black}{data-background-color="#CABFFF"}
 
 :::{.content-box-purple}
 -  Leer cuidadosamente las instrucciones
--  **Planificar** el tiempo 
--  Organizar las ideas antes de escribir (identificar correctamente las *variables*, *grupos* e *hipótesis*)
+-  **Planificar** el tiempo para responder la evaluación
+-  Organizar las ideas antes de escribir, esto es: <br / > [identificar correctamente las ***variables***, ***grupos*** e ***hipótesis***]{.purple}
 :::
 
 ## [*Antes de entregar la prueba*]{.black}{data-background-color="#CABFFF"}
 :::{.content-box-purple}
 - Preguntarse: 
--  *¿Respondí directamente lo que me solicitaban?*
--  *¿[**Calcule**]{.purple} correctamente los estadísticos?*
--  *¿[**Interprete**]{.purple} de forma correcta y anote lo necesario para una respuesta reigurosa que denote el aprendizaje de los contenidos de este curso?*
+-  *¿**Respondí directamente lo que me solicitaban**?*
+-  *¿[**Calculé**]{.purple} **correctamente los estadísticos**?*
+-  *¿[**Interpreté**]{.purple} **de forma correcta y anote lo necesario para una respuesta reigurosa que denote el aprendizaje de los contenidos de este curso**?*
 
 :::
 
