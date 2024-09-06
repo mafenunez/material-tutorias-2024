@@ -120,6 +120,17 @@ La lógica de contraste de hipótesis es intentar [**falsar**]{.purple} lo que e
 :::
 
 ## 
+[... Siguiendo el ejemplo anterior]{.gray} <br />
+
+**Variable $y$**: [**Resultado académico**]{.purple}
+
+**Variable $x$**: Ingreso del hogar del estudiante <br />
+- <span style="background:#CABFFF">Grupo 1($\mu_1$)</span>: Estudiantes de familias con mayores ingresos 
+<br />
+- <span style="background:#AFDBFF">Grupo 2 ($\mu_2$)</span>: Estudiantes de familias con menores ingresos 
+
+
+## 
 
 [... Siguiendo el ejemplo anterior]{.gray} <br />
 
@@ -147,9 +158,39 @@ La lógica de contraste de hipótesis es intentar [**falsar**]{.purple} lo que e
 :::
 ::::
 
+## 
+[... Ahora para contrastar las hipótesis]{.gray} <br />
+
+- $\mu_1$:
+- $\mu_2$:
+- $s_1$: 
+- $s_2$:
+- $n_1$: 
+- $n_2$:
+
 ## **Recordatorio: paso a paso para testar hipótesis**
 
 ![](images/paso.jpeg)
+---
+
+## [**Prueba t de diferencia de medias**]{.purple}
+
+
+Recordatorio: fórmula para calcular **error estándar ($SE$)**
+
+:::{.content-box-purple}
+$$
+SE = \frac{s}{\sqrt{n}}
+$$
+:::
+
+**Prueba t**
+
+:::{.content-box-purple}
+$$
+t = \frac{\bar{x}_1 - \bar{x}_2}{\sqrt{\left( \frac{s_1^2}{n_1} \right) + \left( \frac{s_2^2}{n_2} \right)}}
+$$
+:::
 
 # [<span style="background:#FF4A31">Ahora una ***actividad***</span>]{.black} {data-background-color="#CABFFF"} 
 
