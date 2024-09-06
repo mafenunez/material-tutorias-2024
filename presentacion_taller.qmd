@@ -147,6 +147,9 @@ La lógica de contraste de hipótesis es intentar [**falsar**]{.purple} lo que e
 :::
 ::::
 
+## **Recordatorio: paso a paso para testar hipótesis**
+
+![](images/paso.jpeg)
 
 # [<span style="background:#FF4A31">Ahora una ***actividad***</span>]{.black} {data-background-color="#CABFFF"} 
 
@@ -175,7 +178,7 @@ La lógica de contraste de hipótesis es intentar [**falsar**]{.purple} lo que e
 - Preguntarse: 
 -  *¿**Respondí directamente lo que me solicitaban**?*
 -  *¿[**Calculé**]{.purple} **correctamente los estadísticos**?*
--  *¿[**Interpreté**]{.purple} **de forma correcta y anote lo necesario para una respuesta reigurosa que denote el aprendizaje de los contenidos de este curso**?*
+-  *¿[**Interpreté**]{.purple} **de forma correcta y anote lo necesario para una respuesta rigurosa que denote el aprendizaje de los contenidos de este curso**?*
 
 :::
 
