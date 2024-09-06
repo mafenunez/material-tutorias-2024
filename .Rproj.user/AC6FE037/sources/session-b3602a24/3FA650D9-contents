@@ -118,28 +118,32 @@ La lógica de contraste de hipótesis es intentar [**falsar**]{.purple} lo que e
 :::{.content-box-purple}
 - Formulamos la hipótesis de acuerdo a la relación entre estos grupos:  **igualdad** ($=$) o **desigualdad** ($>$ o $\leq$), es decir, su [**direccionalidad**]{.purple}
 :::
+
 ## 
 
-**Variable $y$**: [**Nivel de dificultad física**]{.purple}
+[... Siguiendo el ejemplo anterior]{.gray} <br />
 
-**Variable $x$**: Satisfacción laboral <br />
-- <span style="background:#CABFFF">Grupo 1($\mu_1$)</span>: Trabajos con un bajo nivel de satisfacción laboral
+**Variable $y$**: [**Resultado académico**]{.purple}
+
+**Variable $x$**: Ingreso del hogar del estudiante <br />
+- <span style="background:#CABFFF">Grupo 1($\mu_1$)</span>: Estudiantes de familias con mayores ingresos 
 <br />
-- <span style="background:#AFDBFF">Grupo 2 ($\mu_2$)</span>: Trabajos con un alto nivel de satisfacción laboral
+- <span style="background:#AFDBFF">Grupo 2 ($\mu_2$)</span>: Estudiantes de familias con menores ingresos 
 
 <br /> 
 <br />
 
 ::::{.columns}
 :::{.column width=20%}
-**$H_1$**: $\mu_1\leq\mu_2$
+**$H_1$**: $\mu_1>\mu_2$
 <br / >
-**$H_0$**: $\mu_1>\mu_2$
+**$H_0$**: $\mu_1\leq\mu_2$
 :::
 :::{.column width=80%}
-**$H_1$**: Los <span style="background:#CABFFF">trabajos con un bajo nivel de satisfacción laboral</span> tendrían un [**menor o igual nivel de dificultad física**]{.purple} que los <span style="background:#AFDBFF">trabajos con un alto nivel de satisfacción laboral</span>
+**$H_1$**: L_s <span style="background:#CABFFF"> estudiantes de familias con mayores ingresos </span> tendrían un [**mejor resultado académico**]{.purple} que l_s <span style="background:#AFDBFF"> estudiantes de familias con menores ingresos</span>
 <br />
-**$H_0$**: Los <span style="background:#CABFFF">trabajos con un bajo nivel de satisfacción laboral</span> tendrían un [**mayor nivel de dificultad física**]{.purple} que los <span style="background:#AFDBFF">trabajos con un alto nivel de satisfacción laboral</span>
+**$H_0$**: L_s <span style="background:#CABFFF">estudiantes de familias con mayores ingresos </span> tendrían un [**menor o igual resultado académico**]{.purple} que l_s <span style="background:#AFDBFF"> estudiantes de familias con menores ingresos</span>
+<br />
 :::
 ::::
 
