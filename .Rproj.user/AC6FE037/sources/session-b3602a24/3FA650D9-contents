@@ -1,0 +1,120 @@
+---
+tpagetitle: "Taller Inferencia Estadística"
+author: "Equipo tutoras sociología"
+
+knitr:
+  opts_chunk: 
+    collapse: true
+    comment: "#>" 
+    R.options:
+      knitr.graphics.auto_pdf: true
+      
+format: 
+  revealjs:
+    logo: images/Imagen2.png
+    slide-number: true
+    theme: [pp.scss]
+    title-slide-attributes:
+      visibility: false
+#      data-background-image: images/portada.jpg
+#      data-background-size: cover
+    auto-play-media: true
+
+
+editor:
+  render-on-save: true
+---
+
+## {data-background-color="#CABFFF"}
+
+:::: {.columns .v-center-container}
+::: {.column width=30%}
+![](images/Imagen3.png){width="80%" fig-align="right"} <br>
+![](images/Imagen2.png){width="80%" fig-align="left"}
+
+:::
+::: {.column width=70%}
+## [***Preparando la primera evaluación de Correlacional: <br/ > [¿Cómo redactamos hipótesis?]{.purple}***]{.black}
+<br> 
+<br>
+Victoria Arias, Cristóbal Mejías, María Fernanda Núñez, Constanza Pedregal y Fernanda Zúñiga 
+:::
+::::
+
+## [**Antes de comenzar...**]{.purple} 
+
+![](images/mentimeter_qr_code.png)
+
+## [*¿Qué es una [**hipótesis**]{.purple}?*]{.black} {data-background-color="#CABFFF"}
+
+## [**Tipos de hipótesis**]{.purple}
+::::{.columns}
+:::{.column width=50%}
+:::{.content-box-purple}
+- Direccionales y no direccionales 
+:::
+:::
+:::{.column width=50%}
+:::{.content-box-purple}
+- de una cola y de dos colas
+:::
+:::
+::::
+
+## [Hipótesis **nula** ($H0$) e hipótesis **alternativa** ($H1$)]{.black} {data-background-color="#CABFFF"}
+
+
+
+# [***¿Por qué es <br /> importante H0?***]{.white} {data-background-color="red"}
+
+## [***Falsabilidad***]{.purple} {data-background-color="#CABFFF"}
+- Falsar
+
+## [Ahora bien... [***¿Cómo redactamos una hipótesis?***]{.purple}]{.black} 
+:::{.content-box-purple}
+- Idetificar **variables** del enunciado: su nivel de medición y cuál es dependiente ($x$) y cuál independiente ($y$). 
+
+:::
+:::{.content-box-purple}
+- De acuerdo a ello, identificamos los **grupos** a comparar (variable $x$): grupo 1 y grupo 2. 
+
+:::
+:::{.content-box-purple}
+- Formulamos la hipótesis de acuerdo a la relación entre estos grupos:  **igualdad** ($=$) o **desigualdad** ($>$ o $<$) 
+:::
+## 
+
+**Variable $y$**: [**Nivel de dificultad física**]{.purple}
+
+**Variable $x$**: Satisfacción laboral <br />
+- <span style="background:#CABFFF">Grupo 1($\mu_1$)</span>: Trabajos con un bajo nivel de satisfacción laboral
+<br />
+- <span style="background:#AFDBFF">Grupo 2 ($\mu_2$)</span>: Trabajos con un alto nivel de satisfacción laboral
+
+<br /> 
+<br />
+
+::::{.columns}
+:::{.column width=20%}
+**$H_1$**: $\mu_1<\mu_2$
+<br / >
+**$H_0$**: $\mu_1\geq\mu_2$
+:::
+:::{.column width=80%}
+**$H_1$**: Los <span style="background:#CABFFF">trabajos con un bajo nivel de satisfacción laboral</span> tendrían un [**menor nivel de dificultad física**]{.purple} que los <span style="background:#AFDBFF">trabajos con un alto nivel de satisfacción laboral</span>
+<br />
+**$H_0$**: Los <span style="background:#CABFFF">trabajos con un bajo nivel de satisfacción laboral</span> tendrían un [**mayor o igual nivel de dificultad física**]{.purple} que los <span style="background:#AFDBFF">trabajos con un alto nivel de satisfacción laboral</span>
+:::
+::::
+
+
+# [<span style="background:#FF4A31">Ahora una ***actividad***</span>]{.black} {data-background-color="#CABFFF"} 
+
+## [Enunciado]{.black} 
+
+# [***Lo último pero no menos importante... <br /> ¿Cómo nos enfrentamos a la [prueba en sala]{.purple}?***]{.black} {data-background-color="#CABFFF"}
+
+## [Tips]{.black} {data-background-color="#CABFFF"}
+
+
+# [**Gracias por su atención!**]{.purple} 
