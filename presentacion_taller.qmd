@@ -108,7 +108,7 @@ La lógica de contraste de hipótesis es intentar [**falsar**]{.purple} lo que e
 
 ## [Ahora bien... [***¿Cómo redactamos una hipótesis?***]{.purple}]{.black} 
 :::{.content-box-purple}
-- Idetificar **variables** del enunciado: su nivel de medición y cuál es dependiente ($x$) y cuál independiente ($y$) 
+- Idetificar **variables** del enunciado: su nivel de medición y cuál es dependiente ($y$) y cuál independiente ($x$) 
 
 :::
 :::{.content-box-purple}
