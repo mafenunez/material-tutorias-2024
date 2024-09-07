@@ -1,0 +1,212 @@
+library(ggplot2)
+
+# Parámetros
+alpha <- 0.05  # Nivel de significancia
+z_alpha_half <- qnorm(1 - alpha/2)  # Valor crítico para dos colas
+
+# Crear datos para la distribución normal
+x <- seq(-4, 4, length = 1000)
+y <- dnorm(x)
+
+# Crear un data frame con los datos
+df <- data.frame(x = x, y = y)
+
+# Graficar la distribución normal y sombrear las regiones de rechazo
+ggplot(df, aes(x = x, y = y)) +
+  geom_line(size = 1) +
+  geom_area(data = subset(df, x <= -z_alpha_half | x >= z_alpha_half), 
+            aes(x = x, y = y), fill = "red", alpha = 0.5) +
+  geom_area(data = subset(df, x > -z_alpha_half & x < z_alpha_half), 
+            aes(x = x, y = y), fill = "blue", alpha = 0.2) +
+  geom_vline(xintercept = c(-z_alpha_half, z_alpha_half), 
+             linetype = "dashed", color = "black") +
+  labs(title = "Distribución Normal con Regiones de Rechazo",
+       x = "Valores z", 
+       y = "Densidad") +
+  theme_classic()
+
+
+
+
+-------
+  
+  # Parámetros
+  alpha <- 0.05  # Nivel de significancia
+z_alpha_half <- qnorm(1 - alpha / 2)  # Valor crítico para dos colas
+
+mean <- 0  # Media de la distribución
+sd <- 1    # Desviación estándar de la distribución
+
+# Crear datos para la distribución normal
+x <- seq(-4, 4, length = 1000)
+y <- dnorm(x, mean = mean, sd = sd)
+
+# Crear un data frame con los datos
+df <- data.frame(x = x, y = y)
+
+ggplot(df, aes(x = x, y = y)) +
+  geom_line(size = 1) +
+  geom_area(data = subset(df, x <= -z_alpha_half | x >= z_alpha_half), 
+            aes(x = x, y = y), fill = "red", alpha = 0.5) +
+  geom_area(data = subset(df, x > -z_alpha_half & x < z_alpha_half), 
+            aes(x = x, y = y), fill = "blue", alpha = 0.2) +
+  geom_area(data = subset(df, x > -sd & x < sd), 
+            aes(x = x, y = y), fill = "purple", alpha = 0.3) +
+  geom_vline(xintercept = mean, linetype = "solid", color = "black", size = 1.2) +  # Media
+  geom_vline(xintercept = c(mean - sd, mean + sd), linetype = "dashed", color = "black") +  # 1 SD
+  geom_vline(xintercept = c(mean - 2*sd, mean + 2*sd), linetype = "dotted", color = "black") +  # 2 SD
+  geom_vline(xintercept = c(mean - 3*sd, mean + 3*sd), linetype = "dotdash", color = "black") +  # 3 SD
+  annotate("text", x = mean, y = max(y), label = "μ", size = 6, vjust = -1.5, color = "black") +
+  labs(title = "Distribución Normal con Regiones de Rechazo y Desviaciones Estándar",
+       x = "Valores z", 
+       y = "Densidad") +
+  theme_classic()
+
+#-------------------
+
+library(ggplot2)
+
+# Generar dos muestras de ejemplo
+set.seed(123)
+grupo1 <- rnorm(30, mean = 5, sd = 1)
+grupo2 <- rnorm(30, mean = 6, sd = 1.5)
+
+# Realizar la prueba t de dos muestras independientes
+prueba_t <- t.test(grupo1, grupo2, var.equal = FALSE)
+
+# Extraer valores de la prueba t
+t_value <- prueba_t$statistic
+df <- prueba_t$parameter  # Grados de libertad
+alpha <- 0.05  # Nivel de significancia
+
+# Gráfico de la distribución t
+x <- seq(-4, 4, length = 1000)
+y <- dt(x, df = df)
+
+# 1. Caso de dos colas
+t_critico <- qt(1 - alpha / 2, df)
+
+# Gráfico
+ggplot(data.frame(x, y), aes(x = x, y = y)) +
+  geom_line(size = 1) +
+  geom_area(data = subset(data.frame(x, y), x <= -t_critico | x >= t_critico),
+            aes(x = x, y = y), fill = "red", alpha = 0.5) +
+  geom_vline(xintercept = c(-t_critico, t_critico), linetype = "dashed", color = "black") +
+  geom_vline(xintercept = t_value, color = "blue", linetype = "solid") +
+  labs(title = "Prueba t - Dos colas",
+       x = "Valores t",
+       y = "Densidad") +
+  theme_minimal()
+
+# 2. Caso de una cola izquierda
+t_critico_izquierda <- qt(alpha, df)
+
+# Gráfico
+ggplot(data.frame(x, y), aes(x = x, y = y)) +
+  geom_line(size = 1) +
+  geom_area(data = subset(data.frame(x, y), x <= t_critico_izquierda),
+            aes(x = x, y = y), fill = "red", alpha = 0.5) +
+  geom_vline(xintercept = t_critico_izquierda, linetype = "dashed", color = "black") +
+  geom_vline(xintercept = t_value, color = "blue", linetype = "solid") +
+  labs(title = "Prueba t - Una cola izquierda",
+       x = "Valores t",
+       y = "Densidad") +
+  theme_classic()
+
+# 3. Caso de una cola derecha
+t_critico_derecha <- qt(1 - alpha, df)
+
+# Gráfico
+ggplot(data.frame(x, y), aes(x = x, y = y)) +
+  geom_line(size = 1) +
+  geom_area(data = subset(data.frame(x, y), x >= t_critico_derecha),
+            aes(x = x, y = y), fill = "red", alpha = 0.5) +
+  geom_vline(xintercept = t_critico_derecha, linetype = "dashed", color = "black") +
+  geom_vline(xintercept = t_value, color = "blue", linetype = "solid") +
+  labs(title = "Prueba t - Una cola derecha",
+       x = "Valores t",
+       y = "Densidad") +
+  theme_classic()
+#------------------
+
+library(ggplot2)
+
+# Generar dos muestras de ejemplo
+set.seed(123)
+grupo1 <- rnorm(30, mean = 5, sd = 1)
+grupo2 <- rnorm(30, mean = 6, sd = 1.5)
+
+# Realizar la prueba t de dos muestras independientes
+prueba_t <- t.test(grupo1, grupo2, var.equal = FALSE)
+
+# Extraer valores de la prueba t
+t_value <- prueba_t$statistic
+df <- prueba_t$parameter  # Grados de libertad
+alpha <- 0.05  # Nivel de significancia
+
+# Gráfico de la distribución t
+x <- seq(-4, 4, length = 1000)
+y <- dt(x, df = df)
+
+# 1. Caso de dos colas con las colas sombreadas
+t_critico <- qt(1 - alpha / 2, df)
+
+# Gráfico
+ggplot(data.frame(x, y), aes(x = x, y = y)) +
+  geom_line(size = 1) +
+  geom_area(data = subset(data.frame(x, y), x <= -t_critico | x >= t_critico),
+            aes(x = x, y = y), fill = "red", alpha = 0.5) +
+  geom_vline(xintercept = c(-t_critico, t_critico), linetype = "dashed", color = "black") +
+  geom_vline(xintercept = t_value, color = "blue", linetype = "solid") +
+  labs(title = "Prueba t - Dos colas (Colas sombreadas)",
+       x = "Valores t",
+       y = "Densidad") +
+  theme_minimal()
+
+# 2. Caso de una cola izquierda
+t_critico_izquierda <- qt(alpha, df)
+
+# Gráfico
+ggplot(data.frame(x, y), aes(x = x, y = y)) +
+  geom_line(size = 1) +
+  geom_area(data = subset(data.frame(x, y), x <= t_critico_izquierda),
+            aes(x = x, y = y), fill = "red", alpha = 0.5) +
+  geom_vline(xintercept = t_critico_izquierda, linetype = "dashed", color = "black") +
+  geom_vline(xintercept = t_value, color = "blue", linetype = "solid") +
+  labs(title = "Prueba t - Una cola izquierda",
+       x = "Valores t",
+       y = "Densidad") +
+  theme_minimal()
+
+# 3. Caso de una cola derecha
+t_critico_derecha <- qt(1 - alpha, df)
+
+# Gráfico
+ggplot(data.frame(x, y), aes(x = x, y = y)) +
+  geom_line(size = 1) +
+  geom_area(data = subset(data.frame(x, y), x >= t_critico_derecha),
+            aes(x = x, y = y), fill = "red", alpha = 0.5) +
+  geom_vline(xintercept = t_critico_derecha, linetype = "dashed", color = "black") +
+  geom_vline(xintercept = t_value, color = "blue", linetype = "solid") +
+  labs(title = "Prueba t - Una cola derecha",
+       x = "Valores t",
+       y = "Densidad") +
+  theme_minimal()
+
+
+
+
+Gráfico
+ggplot(data.frame(x, y), aes(x = x, y = y)) +
+  geom_line(size = 1) +
+  # Sombrear exclusivamente las colas
+  geom_area(data = subset(data.frame(x, y), x <= -t_critico),
+            aes(x = x, y = y), fill = "red", alpha = 0.5) +
+  geom_area(data = subset(data.frame(x, y), x >= t_critico),
+            aes(x = x, y = y), fill = "red", alpha = 0.5) +
+  geom_vline(xintercept = c(-t_critico, t_critico), linetype = "dashed", color = "black") +
+  geom_vline(xintercept = t_value, color = "blue", linetype = "solid") +
+  labs(title = "Prueba t - Dos colas (Colas sombreadas exclusivamente)",
+       x = "Valores t",
+       y = "Densidad") +
+  theme_classic()
